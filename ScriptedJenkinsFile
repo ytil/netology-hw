@@ -8,7 +8,7 @@ node("linux"){
     }
 
     stage("Run playbook"){
-        if (prod_run){
+        if (params.prod_run){
             sh 'ansible-playbook --check --diff site.yml -i inventory/prod.yml'
         }
         else{
