@@ -1,0 +1,4 @@
+---
+# tasks file for echo
+- name: Echo hello world
+  shell: echo privet mir
